@@ -140,13 +140,6 @@ inputs:
       ocamlPackages.ocamlformat
     ];
   };
-  config.specs.idris = {
-    data = null;
-    runtimePkgs = with pkgs; [
-      idris2
-      idris2Packages.idris2Lsp
-    ];
-  };
 
   config.specs.general = {
     # this would ensure any config included from nix in here will be ran after any provided by the `lze` spec
